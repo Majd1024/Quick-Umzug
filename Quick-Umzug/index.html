@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>UmzugTransport – Moving Service in Berlin</title>
+<meta name="description" content="Moving service in Berlin – fast, reliable & fair. Transparent prices, insured & professional. Call or WhatsApp for a quote.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="top">
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo">🚚</div> <span data-i18n="brand">UmzugTransport</span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+        <li><a href="#pricing" data-i18n="nav_pricing">Pricing</a></li>
+        <li><a href="#reviews-section" data-i18n="nav_reviews">Reviews</a></li>
+        <li><a href="#booking" data-i18n="nav_booking">Booking</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- CTA bar only has toggles (as you requested) -->
+    <div class="cta-bar">
+      <div class="toggles">
+        <button class="chip" id="langDe">DE</button>
+        <button class="chip active" id="langEn">EN</button>
+        <button class="chip" id="themeToggle" title="Light / Dark">🌙</button>
+      </div>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container inner">
+    <span class="badge">🚚 <span data-i18n="brand">UmzugTransport</span></span>
+    <h1 data-i18n="hero_title">Moving Service in Berlin – Fast, Reliable &amp; Fair</h1>
+    <p class="subtitle" data-i18n="hero_subtitle">Transparent prices, insured &amp; professional — we make your move stress-free.</p>
+
+    <div class="hero-actions">
+      <a class="btn btn-call" data-call id="heroCall">📞 <span id="heroNumber"></span></a>
+      <a class="btn btn-wa" id="waHero" target="_blank" rel="noopener" data-i18n="hero_whatsapp">💬 WhatsApp Chat</a>
+    </div>
+
+    <div class="hero-points">
+      <span data-i18n="hp_insured">• Insured & Reliable</span><span class="dot"></span>
+      <span data-i18n="hp_experience">15+ Years Experience</span><span class="dot"></span>
+      <span data-i18n="hp_fair">Fair Pricing</span>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title" data-i18n="services_title">Our Services</h2>
+    <p class="section-sub" data-i18n="services_sub">Everything you need for a smooth move.</p>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="icon">🚚</div>
+        <h3 data-i18n="svc_local_title">Local Moves (Berlin)</h3>
+        <p data-i18n="svc_local_desc">City moves within Berlin — fast & careful.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🛠️</div>
+        <h3 data-i18n="svc_furniture_title">Furniture Assembly</h3>
+        <p data-i18n="svc_furniture_desc">Professional disassembly & re-assembly.</p>
+      </div>
+      <div class="card">
+        <div class="icon">👷</div>
+        <h3 data-i18n="svc_van_title">Van + Driver</h3>
+        <p data-i18n="svc_van_desc">Small transports, helpers on request.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🧹</div>
+        <h3 data-i18n="svc_clear_title">Clearance & Disposal</h3>
+        <p data-i18n="svc_clear_desc">Eco-friendly, transparent billing.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📝</div>
+        <h3 data-i18n="svc_survey_title">Survey & Advice</h3>
+        <p data-i18n="svc_survey_desc">Free estimate by phone or on-site.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="container">
+    <h2 class="section-title" data-i18n="pricing_title">Transparent Pricing</h2>
+    <p class="section-sub" data-i18n="pricing_sub">Fair and honest — no hidden fees.</p>
+
+    <div class="grid grid-2">
+      <!-- Local Move -->
+      <div class="card price-card">
+        <div class="icon">⏱️</div>
+        <div>
+          <h3 style="margin:0" data-i18n="price_local_title">Local Move (Berlin)</h3>
+          <div class="desc" data-i18n="price_local_desc">incl. 2 movers + van</div>
+        </div>
+        <strong class="amount">
+          <span data-i18n="from">from</span>
+          <span class="price price-local">€80</span>
+          <span data-i18n="per_hour">/hour</span>
+        </strong>
+      </div>
+
+      <!-- Extra Helper -->
+      <div class="card price-card">
+        <div class="icon">👥</div>
+        <div>
+          <h3 style="margin:0" data-i18n="price_helper_title">Extra Helper</h3>
+          <div class="desc" data-i18n="price_helper_desc">additional helper per hour</div>
+        </div>
+        <strong class="amount">
+          +<span class="price price-helper">€25</span>
+          <span data-i18n="per_hour">/hour</span>
+        </strong>
+      </div>
+
+      <!-- Assembly -->
+      <div class="card price-card">
+        <div class="icon">🪛</div>
+        <div>
+          <h3 style="margin:0" data-i18n="price_assembly_title">Assembly/Disassembly</h3>
+          <div class="desc" data-i18n="price_assembly_desc">per item (simple)</div>
+        </div>
+        <strong class="amount">
+          <span data-i18n="from">from</span>
+          <span class="price price-assembly">€30</span>
+          <span data-i18n="flat">flat</span>
+        </strong>
+      </div>
+
+      <!-- Clearance -->
+      <div class="card price-card">
+        <div class="icon">♻️</div>
+        <div>
+          <h3 style="margin:0" data-i18n="price_clear_title">Clearance/Disposal</h3>
+          <div class="desc" data-i18n="price_clear_desc">to recycling center</div>
+        </div>
+        <strong class="amount">
+          <span data-i18n="from">from</span>
+          <span class="price price-clear">€50</span>
+          <span data-i18n="per_m3">per m³</span>
+        </strong>
+      </div>
+    </div>
+
+    <p class="tiny" style="margin-top:14px" data-i18n="pricing_note">
+      All prices include insurance & VAT. Final cost depends on distance, floors & volume.
+    </p>
+
+    <!-- GALLERY: single tile (Happy customers removed) -->
+    <div class="gallery single" style="margin-top:26px">
+      <div class="tile">
+        <img alt="Our team" src="https://images.unsplash.com/photo-1595769816263-9b910be24d5f?q=80&w=1800&auto=format&fit=crop">
+        <div class="cap" data-i18n="gal_team">Our experienced team<br><span class="tiny">Professional & reliable</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews-section">
+  <div class="container">
+    <h2 class="section-title" data-i18n="reviews_title">Reviews</h2>
+    <p class="section-sub" data-i18n="reviews_sub">Your opinion matters — rate our service.</p>
+
+    <div class="summary-bar">
+      <div id="avgStars" class="stars" aria-hidden="true"></div>
+      <div class="big"><span id="avgNum">0.0</span>/5</div>
+      <div class="tiny">(<span id="revCount">0</span> <span data-i18n="reviews_count_word">reviews</span>)</div>
+    </div>
+
+    <div class="reviews-wrap">
+      <form id="reviewForm" class="card" style="align-self:start">
+        <h3 style="margin:0 0 6px" data-i18n="review_form_title">Leave a review</h3>
+        <p class="tiny" style="margin:0 0 10px;color:var(--muted)" data-i18n="review_form_tip">Select stars and write a short comment.</p>
+
+        <div class="field" style="margin-bottom:8px">
+          <label data-i18n="review_rating_label">Your rating</label>
+          <div id="revStars" class="stars" role="radiogroup" aria-label="Star rating"></div>
+          <input type="hidden" id="revRating" required>
+        </div>
+
+        <div class="field" style="margin-bottom:8px">
+          <label for="revName" data-i18n="review_name_label">Your name (optional)</label>
+          <input id="revName" data-i18n-placeholder="ph_name" placeholder="John D.">
+        </div>
+
+        <div class="field">
+          <label for="revText" data-i18n="review_comment_label">Your comment</label>
+          <textarea id="revText" required data-i18n-placeholder="ph_comment" placeholder="How was your experience? (min 10 characters)"></textarea>
+        </div>
+
+        <div class="actions" style="margin-top:12px">
+          <button type="submit" class="btn btn-primary" data-i18n="review_submit">Submit review</button>
+          <button type="button" id="clearReviews" class="btn" title="Local only" data-i18n="review_clear">Clear local reviews</button>
+        </div>
+        <p class="tiny" style="margin-top:8px" data-i18n="review_note">Note: Stored locally in your browser (MVP).</p>
+      </form>
+
+      <div class="card" style="padding:0">
+        <div style="padding:18px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px">
+          <h3 style="margin:0" data-i18n="review_recent">Recent reviews</h3>
+          <span class="tiny" style="color:var(--muted)" data-i18n="review_sort">Newest first</span>
+        </div>
+        <div id="reviewsList" class="review-list" style="padding:18px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="container">
+    <h2 class="section-title" data-i18n="booking_title">Booking</h2>
+    <p class="section-sub" data-i18n="booking_sub">Send the basics — we’ll reply with a quote quickly.</p>
+
+    <!-- EmailJS form -->
+    <form id="quoteForm" class="card form">
+      <input type="hidden" name="to_email" value="majdalanini5@gmail.com">
+
+      <div class="field">
+        <label for="name" data-i18n="f_name">Name*</label>
+        <input id="name" name="name" data-i18n-placeholder="ph_fullname" placeholder="John Doe" required>
+      </div>
+      <div class="field">
+        <label for="phone" data-i18n="f_phone">Phone*</label>
+        <input id="phone" name="phone" inputmode="tel" data-i18n-placeholder="ph_phone" placeholder="+49 ..." required>
+      </div>
+      <div class="field">
+        <label for="date" data-i18n="f_date">Moving date*</label>
+        <input id="date" name="date" type="date" required>
+      </div>
+      <div class="field">
+        <label for="size" data-i18n="f_size">Home size</label>
+        <select id="size" name="size">
+          <option value="" data-i18n="opt_choose">Please choose</option>
+          <option data-i18n="opt_1">1 room</option>
+          <option data-i18n="opt_2">2 rooms</option>
+          <option data-i18n="opt_3">3 rooms</option>
+          <option data-i18n="opt_4">4 rooms</option>
+          <option data-i18n="opt_5">5+ rooms</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="from" data-i18n="f_from">From (address)</label>
+        <input id="from" name="from" data-i18n-placeholder="ph_from" placeholder="Street, ZIP City, floor">
+      </div>
+      <div class="field">
+        <label for="to" data-i18n="f_to">To (address)</label>
+        <input id="to" name="to" data-i18n-placeholder="ph_to" placeholder="Street, ZIP City, floor">
+      </div>
+      <div class="field full">
+        <label for="msg" data-i18n="f_message">Message</label>
+        <textarea id="msg" name="msg" data-i18n-placeholder="ph_message" placeholder="Special items (elevator, piano, no-parking zone, boxes)…"></textarea>
+      </div>
+
+      <div class="actions full">
+        <button class="btn btn-primary" id="mailSend" type="submit" data-i18n="cta_email">Send by Email</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title" data-i18n="contact_title">Contact</h2>
+    <p class="section-sub" data-i18n="contact_sub">Questions? Call or message us on WhatsApp.</p>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <h3 data-i18n="contact_direct">Direct contact</h3>
+        <p><strong data-i18n="contact_phone">Phone:</strong> <a data-call id="phoneLink">+49 …</a></p>
+        <p><strong data-i18n="contact_email">Email:</strong> <a id="mailLink" data-i18n="contact_email_send">Send email</a></p>
+        <p><strong>WhatsApp:</strong> <a id="waLink" target="_blank" rel="noopener" data-i18n="contact_whatsapp">Start chat</a></p>
+        <p class="tiny" data-i18n="hours">Office hours: Mon–Sat 08:00–20:00</p>
+      </div>
+      <div>
+        <iframe class="embed" loading="lazy" src="https://www.google.com/maps?q=Berlin&output=embed" title="Map – UmzugTransport"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot">
+    <div>
+      <div class="brand" style="color:#fff"><div class="logo">🚚</div><span data-i18n="brand">UmzugTransport</span></div>
+      <p class="tiny">© <span id="y"></span> <span data-i18n="brand">UmzugTransport</span> — <span data-i18n="rights">All rights reserved.</span></p>
+    </div>
+    <div class="tiny"><span data-i18n="legal">Imprint · Privacy · Terms</span> · Berlin, Germany</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<!-- EmailJS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+ 
+</body>
+</html>
